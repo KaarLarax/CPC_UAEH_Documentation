@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/chesscarlosyangelica
 
 # G. Ajedrez Primaveral
-### Autor: Kaarlarax
+#### Autor: Kaarlarax
 
 ## Descripción
 Durante las cálidas tardes de primavera, Carlos y Angélica aprovechan el clima soleado para disfrutar su tiempo de ocio al aire libre. Después de pasar horas estudiando programación y algoritmos, deciden darle un descanso a sus mentes y relajarse bajo un árbol florecido jugando al ajedrez. Inspirados por la frescura de la temporada, deciden inventar un nuevo reto basado en un problema clásico.
@@ -43,7 +43,7 @@ k 8 8
 - Condicionales
 
 ## Propuesta de solución
-### Autor: Jordan
+#### Autor: Jordan
 
 Solo se piden 4 piezas distintas, por cada una de las piezas se puede hacer una simulación con el tablero dado o se pueden aplicar fórmulas para calcular la cantidad de piezas que caben en el tablero dado. Para explicar las posiciones de las piezas, voy a poner un ejemplo con un tablero de $5 \times 6$, con la solución para todas las piezas:
 
@@ -124,6 +124,8 @@ La fórmula encontrada es $\frac{n \cdot m + 1}{2}$.
 ```
 
 ### C++
+#### Autor: Jordan
+
 Cuando hacemos una división a un número que se encuentra en una variable entera, y el resultado tiene decimales, C++ se encarga de cortar los decimales, por lo que en lugar de redondear hacia abajo, simplemente lo dejamos como esta, si el resultado da 6.5, C++ va a cortar los decimales y queda solo el entero.
 
 La función switch es C++ solo recibe como parámetro números enteros, por lo que solo puede recibir char e int y sus variantes, por esa razón se usó char en lugar de string.
