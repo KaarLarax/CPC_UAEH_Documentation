@@ -113,6 +113,8 @@ T.F..
 
 Con esa entrada obtendremos un arreglo 1-indexado ${4, 0, 0, 1, 1}$, donde solo debemos encontrar la posición del número mayor, que en este caso es $1$, y se encontraron $4$ Tulipanes en esta columna.
 
+Podemos usar una variable que empiece en 0 para encontrar el número mayor que solo se actualice que encuentra un número mayor que 0, de esta forma, si no encuentra ningún número mayor que 0, signfica que no hubo tulipanes en ninguna columna, por lo que el resultado será "Bro...".
+
 ### C++
 
 #### Autor: Jordan
