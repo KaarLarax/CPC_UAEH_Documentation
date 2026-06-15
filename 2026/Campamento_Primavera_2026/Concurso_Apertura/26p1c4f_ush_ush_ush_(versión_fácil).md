@@ -87,24 +87,24 @@ En el segundo caso, sin importar hacia dónde corra Maullín, el lobo lo atrapar
 
 
 ## Implementación
-
+#### Autor:
 
 ### C++
-
+#### Autor:
 
 ```cpp
 
 ```
 
 ### Java
-
+#### Autor:
 
 ```java
 
 ```
 
 ### Python
-
+#### Autor:
 
 ```python
 
