@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/floresquesesuman
 
 # 26P1D3. Flores que se suman
+#### Autor: MYS158
 
 ## Descripción
 Durante la primavera, un pequeño jardín mágico comienza a florecer gracias a dos tipos de semillas especiales: las semillas $a$ y las semillas $b$.
