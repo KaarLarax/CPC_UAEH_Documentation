@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/flores
 
 # 26P1C5. Flores
+#### Autor:
 
 ## Descripción
 *"Sembré una flor sin interés... yo la regaba con agua que cae del cielo"*
@@ -67,24 +68,24 @@ En el tercer caso, lamentablemente Honey no tiene forma de recolectar de forma e
 
 
 ## Implementación
-
+#### Autor:
 
 ### C++
-
+#### Autor:
 
 ```cpp
 
 ```
 
 ### Java
-
+#### Autor:
 
 ```java
 
 ```
 
 ### Python
-
+#### Autor:
 
 ```python
 
