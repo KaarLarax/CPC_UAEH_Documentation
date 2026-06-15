@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/cerdita
 
 # J. cerdita
-### Autor: xenredda
+#### Autor: xenredda
 
 ## Descripción
 
@@ -66,7 +66,7 @@ Imprime un único número entero correspondiente al resultado de $C^E$.
 - Leyes de exponentes
 
 ## Propuesta de solución
-### Autor: Jordan
+#### Autor: Jordan
 
 En la descripción se especifica que la entrada es $C$ $E$, también se menciona la expresión $C^E$, y al revisar los **Ejemplos** se puede ver que la solucion será elevar $C$ a la $E$ potencia.
 
@@ -84,6 +84,7 @@ graph TD;
 ```
 
 ### C++
+#### Autor: Jordan
 
 Respecto a los límites hay que notar que $C$ tiene un valor entre 1 y 10, mientras que $E$ tiene un valor entre 0 y 10, por lo que, en el peor de los casos, la entrada será 10 10, representado como $10^{10}$, valor que desborda una variable entera **int** de 32 bits, cuyo máximo valor es $10^9$, por lo que se necesita una variable entera de 64 bits, denominada **long long** para poder guardar el valor resultante de la operación.
 
