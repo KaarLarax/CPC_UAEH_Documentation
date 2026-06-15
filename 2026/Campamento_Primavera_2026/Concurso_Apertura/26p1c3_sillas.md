@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/sillas
 
 # 26P1C3. Sillas
-
+#### Autor: Mafuyu_137
 ## Descripción
 Al momento de organizar un evento masivo, un aspecto crucial es acomodar los asientos de las personas. Para ello, los organizadores crearon una regla que debe cumplirse sin excepción:
 
@@ -69,13 +69,13 @@ Para la cuarta fila, no existe lugar disponible, por lo que la respuesta es **4*
 - 
 
 ## Propuesta de solución
-
+#### Autor:
 
 ## Implementación
 
 
 ### C++
-
+#### Autor:
 
 ```cpp
 #include <bits/stdc++.h>
@@ -109,21 +109,21 @@ int main() {
 ```
 
 ### Java
-
+#### Autor:
 
 ```java
 
 ```
 
 ### Python
-
+#### Autor:
 
 ```python
 
 ```
 
 ### Kotlin
-
+#### Autor:
 
 ```kotlin
 
