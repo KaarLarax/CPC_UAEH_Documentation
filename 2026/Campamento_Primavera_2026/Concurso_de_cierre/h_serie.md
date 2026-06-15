@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/serie
 
 # H. Serie
-### Autor: Soria
+#### Autor: Soria
 
 ## Descripción
 *"Fue todo, ¿no es así?"*
@@ -66,7 +66,7 @@ Un entero $X$ la suma total del voltaje.
 - Condicionales
 
 ## Propuesta de solución
-### Autor: Jordan
+#### Autor: Jordan
 
 Si los números empiezan a duplicarse de derecha a izquierda empezando en $1$, es un clásico conversor de binario a decimal. 
 
@@ -74,6 +74,8 @@ Si los números empiezan a duplicarse de derecha a izquierda empezando en $1$, e
 Comenzando desde $0$ de derecha a izquierda, si el contenido de la cadena en una posición $i$ es igual a $1$, entonces sumamos el resultado de elevar $2^i$ a un total. 
 
 ### C++
+#### Autor: Jordan
+
 El total puede ser una variable int donde se acumule el resultado de la operación de potencia se puede hacer con la función **pow()** que está contenida en la librería **cmath**, contenida a su vez en la librería **bits/stdc++.h**, dando como parámetros $2$ e $i$:
 
 ```cpp
