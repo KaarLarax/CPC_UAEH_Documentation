@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/comidaapuros
 
 # I. Comida en apuros
-### Autor: Empanak
+#### Autor: Empanak
 
 ## Descripción
 La primavera ha llegado a nuestro lado del mundo y con ella ha empezado esa época en la que solemos ver a la naturaleza renovarse y vemos cosas maravillosas como plantas floreciendo, abejas polinizando intensamente, muchos animales empezando a criar y algunos otros despiertan de un largo descanso.
@@ -70,7 +70,7 @@ Un sólo número $T$ que indica el tamaño de la colonia en el momento dado.
 - Ciclos
 
 ## Propuesta de solución
-### Autor: Jordan
+#### Autor: Jordan
 
 Se pueden tomar dos estrategias para resolver el problema, debido a que los límites no son grandes, sino que $N$ solo llega hasta $90$, se puede resolver haciendo un simulación tal y como se describe en la descripción, cumpliendo por cada segundo con las reglas establecidas; o se pueden hacer casos de prueba de la siguiente forma:
 
@@ -89,6 +89,8 @@ Y observar que la población sigue un patrón regular, la sucesión de Fibonacci
 Para ambas estrategias, basta con usar tres variables, y ya sea siguiendo las reglas de la descripción o la regla de Fibonacci se puede llegar a la solución iterando hasta $N$.
 
 ### C++
+#### Autor: Jordan
+
 Es importante tener en cuenta los límites para el tipo de variable que se va a usar, al sumar números cada vez más grandes, existe el riesgo de que se desborden las variables, por lo que se usa **long long** para poder almacenar números de hasta $10^{19}$.
 
 ```cpp
