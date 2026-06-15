@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/tulipanes
 
 # 26P2C1. Tulipanes
+#### Autor: wisperfrog
 
 ## Descripción
 Hoy es $27$ de mayo y una rana profundamente enamorada cumple un mes más de noviazgo con su querida novia. Esta rana no tiene dinero, pero está dispuesta a hacer lo que sea por conseguir un detalle para celebrar este día.
@@ -86,17 +87,31 @@ En el segundo caso, la rana puede robar tanto en la tercera como en la cuarta co
 Dadas las restricciones de la salida, la rana debe robar en la tercera columna.
 
 ## Temas identificados
-### Matemáticas
-- 
-
 ### Programación
-- 
+- Arreglos de frecuencia
+- Ciclos
+- Condicionales
 
 ## Propuesta de solución
+#### Autor: Jordan
 
+Se debe buscar la columna en la que más tulipanes haya, si solo queremos la cantidad, no necesitamos almacenar toda la matriz, solo la frecuencia con la que aparecen los tulipanes segun la columna en la que se encuentran, por lo que podemos generar un arreglo de frecuencia (cubetas) donde en la posición de la columna sumemos 1 por cada tulipan que encontremos en la matriz de entrada.
+
+Una vez que tenemos el arreglo de frecuencias completo, podemos buscar el número mayor dentro de ese arreglo, la posición del número mayor y la posición del número mayor es la respuesta, si todos son 0, el resultado será "Bro...".
 
 ## Implementación
+Creamos un arreglo, para que durante la entrada hagamos dos ciclos for anidados, de forma que un for nos de las filas y el otro las columnas, solo nos interesa sumar 1 a la posición de la columna donde se encontró un tulipan.
 
+```
+5 5
+FFP..
+T..T.
+T...T
+T.PPP
+T.F..
+```
+
+Con esa entrada obtendremos un arreglo 1-indexado ${4, 0, 0, 1, 1}$, donde solo debemos encontrar la posición del número mayor, que en este caso es $1$, y se encontraron $4$ Tulipanes en esta columna.
 
 ### C++
 
@@ -106,12 +121,10 @@ Dadas las restricciones de la salida, la rana debe robar en la tercera columna.
 
 using namespace std;
 
-int a[1000000];
+int a[1000005];
 
 int main()
 {
-    cin.tie(0); ios::sync_with_stdio(false);
-
     int n, m;
     cin >> n >> m;
     for (int i = 1; i <= n; i++) {
@@ -127,10 +140,8 @@ int main()
     int c = 1;
     int mayor = 0;
     for (int i = 1; i <= m; i++) {
-        //cout << "valor: " << a[i] << '\n';
         if (a[i] > mayor) {
             mayor = a[i];
-            //cout << mayor << '\n';
             c = i;
         }
     }
