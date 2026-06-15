@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/pacascolmena
 
 # E. Pacas en la colmena
-### Empanak
+#### Empanak
 
 ## Descripción
 
@@ -24,7 +24,7 @@ $Q$ líneas, cada una con un número que represente la cantidad de pacas armadas
 
 ## Ejemplos
 
-### Entrada
+#### Entrada
 ```
 10 3
 2 1 1 2 2 1 2 1 2 2 
@@ -69,7 +69,7 @@ En el primer caso:
 - Condicionales
 
 ## Propuesta de solución
-### Autor: Jordan
+#### Autor: Jordan
 
 Se hacen dos arreglos de frecuencia acumulada, uno para cada material, representados como $1$ y $2$.
 
@@ -90,6 +90,8 @@ Solo queda sumar la cantidad de pacas para ambos materiales e imprimir el result
 ## Implementación
 
 ### C++
+#### Autor: Jordan
+
 Particularmente C++ tiene el problema de que al declarar un arreglo dentro de main, no tiene valores inicializados, cada posición del arreglo tiene valores basura de la RAM, por lo que para que todos los valores sean inicializados en $0$, lo declaramos fuera de main y le damos el tamaño correspondiente a los límites del problema, que en este caso fue $10^6$ más unas cuantas posiciones más para asegurar que no habrá intentos de acceso de memoria a espacios que no nos corresponden.
 
 Además, al tener variables enteras y dividirlas por un número que nos da un resultado decimal, C++ se encarga de cortar los decimales, si el resultado es $0.5$, dentro de la variable entera el valor será $0$, si el resultado en $5.99999$, la variable entera valdrá $5$.
