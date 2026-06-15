@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/
 
 # 26P1D2. dios nos ha abandonado
+#### Autor: xenredda
 
 ## Descripción
 Se supone que ya es primavera. en todo el mundo esto significa flores, pajaritos cantando y calorcito rico, pero tú estudias en el Instituto de Artes (IDA) en Real del Monte y aquí la primavera es un mito como los finales felices. mientras en el resto de México ya sacaron los shorts, aqui la neblina es tan espesa que a veces saludas a un árbol pensando que es tu coordinador.
@@ -53,13 +54,13 @@ todo bien, un paste de papa y se me quita
 - 
 
 ## Propuesta de solución
-
+#### Autor:
 
 ## Implementación
 
 
 ### C++
-
+#### Autor:
 
 ```cpp
 #include <iostream>
@@ -78,21 +79,21 @@ int main() {
 ```
 
 ### Java
-
+#### Autor:
 
 ```java
 
 ```
 
 ### Python
-
+#### Autor:
 
 ```python
 
 ```
 
 ### Kotlin
-
+#### Autor:
 
 ```kotlin
 
