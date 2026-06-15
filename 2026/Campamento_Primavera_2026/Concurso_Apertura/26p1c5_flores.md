@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/flores
 
 # 26P1C5. Flores
-#### Autor:
+#### Autor: Soria
 
 ## Descripción
 *"Sembré una flor sin interés... yo la regaba con agua que cae del cielo"*
