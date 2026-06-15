@@ -31,13 +31,14 @@ La salida que genere tu código debe ser exactamente igual a la salida que descr
 - Flujo de salida
 
 ## Propuesta de solución
-#### Autor:
+#### Autor: mae
+Siempre la salida es "hola mundo".
 
 ## Implementación
-
+Imprimir en consola "hola mundo".
 
 ### C++
-#### Autor:
+#### Autor: mae
 
 ```cpp
 #include <iostream>
