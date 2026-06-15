@@ -116,6 +116,9 @@ Con esa entrada obtendremos un arreglo 1-indexado ${4, 0, 0, 1, 1}$, donde solo 
 Podemos usar una variable que empiece en 0 para encontrar el número mayor que solo se actualice que encuentra un número mayor que 0, de esta forma, si no encuentra ningún número mayor que 0, signfica que no hubo tulipanes en ninguna columna, por lo que el resultado será "Bro...".
 
 ### C++
+Para leer la matriz y comparar caracter por caracter, podemos leer variables char, sin necesidad de que haya un espacio entre los caracteres ya se leen en variables distintas.
+
+Al declarar el arreglo de enteros fuera de main, forzamos a que se cree un arreglo con valores default, en este caso para int es $0$, de esta forma sí podemos sumar dentro del arreglo.
 
 #### Autor: Jordan
 ```cpp
