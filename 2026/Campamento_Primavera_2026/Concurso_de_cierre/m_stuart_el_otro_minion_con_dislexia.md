@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/stuartminiondislexia
 
 # M. Stuart, el otro minion con dislexia
-### Autor: wisperfrog
+#### Autor: wisperfrog
 
 ## Descripción
 Stuart, el hermano de Bob, empezó a ir a la misma escuela que él y aprendió a escribir textos en español. Como le dejaban la misma tarea que Bob, debía hacer varios textos sobre la primavera.
@@ -93,7 +93,7 @@ ni mi libro ni mi silla
 - Vector
 
 ## Propuesta de solución
-### Autor: Jordan
+#### Autor: Jordan
 
 En este problema, el diccionario de palabras que pueden escribirse mal son muy pocas, y todas comparten una característica, por cada palabra, hay exactamente una vez cada letra, y cada palabra tiene letras distintas que el resto de palabras, por lo que podemos decir que para la palabra "**nube**", si hay exactamente una "**n**", una "**u**", una "**b**" y una "**e**" y la cantidad total de letras es ***4***, entonces podemos asegurar que se trata de una de las posibles combinaciones mal escritas de la palabra "nube", por lo que la podemos corregir por la palabra "**nube**", y así para el resto de palabras.
 
@@ -110,6 +110,8 @@ Si la palabra es coincidió con alguno de nuestros filtros o no, vamos a concate
 Al terminar con la frase la imprimimos.
 
 ### C++
+#### Autor: Jordan
+
 En este lenguaje, las variable char son interpretados como números, por lo que un char se puede usar como posición de un arreglo, esa característica puede ser usada para registrar qué letras y cuáles aparecen en la palabra
 
 Para poder tener un bloque de entradas y un bloque de salidas, se usan las líneas:
