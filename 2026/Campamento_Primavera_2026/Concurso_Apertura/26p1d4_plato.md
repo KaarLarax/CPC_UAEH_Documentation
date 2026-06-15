@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/plato
 
 # 26P1D4. Plato
+#### Autor: Soria
 
 ## Descripción
 *"Tiempo, cielo lo perdí..."*
@@ -49,13 +50,13 @@ En el primer caso Coco terminó en 1 segundo después de que el juez activara el
 - 
 
 ## Propuesta de solución
-
+#### Autor:
 
 ## Implementación
 
 
 ### C++
-
+#### Autor:
 
 ```cpp
 #include <bits/stdc++.h>
