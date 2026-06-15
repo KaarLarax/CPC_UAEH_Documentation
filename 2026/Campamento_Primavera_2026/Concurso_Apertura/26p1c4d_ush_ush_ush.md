@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/ush
 
 # 26P1C4D. ush ush ush
+#### Autor: Ignacio_benq
 
 ## Descripción
 Luego de superar los obstaculos con la fuerte neblina, Maullín, en su recorrido por el bosque, se encuentra cara a cara con un lobo que lo mira con hambre.
@@ -91,34 +92,34 @@ En el segundo caso, sin importar hacia dónde corra Maullín, el lobo lo atrapar
 - 
 
 ## Propuesta de solución
-
+#### Autor:
 
 ## Implementación
 
 
 ### C++
-
+#### Autor:
 
 ```cpp
 
 ```
 
 ### Java
-
+#### Autor:
 
 ```java
 
 ```
 
 ### Python
-
+#### Autor:
 
 ```python
 
 ```
 
 ### Kotlin
-
+#### Autor:
 
 ```kotlin
 
