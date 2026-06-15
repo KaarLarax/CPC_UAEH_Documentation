@@ -2,6 +2,7 @@ https://www.cpcjudge.com/problem/saludandoatodos
 
 # 26P1D1. Saludando a todos
 
+#### Autor: wisperfrog
 ## Descripción
 Creo que todos estamos de acuerdo en que el saludo más simple que existe se hace con un simple hola: "hola rana", "hola capibara" y "hola maullín" son algunos ejemplos pero, ¿y si tuvieras que saludar al mundo?
 
@@ -30,13 +31,13 @@ La salida que genere tu código debe ser exactamente igual a la salida que descr
 - Flujo de salida
 
 ## Propuesta de solución
-
+#### Autor:
 
 ## Implementación
 
 
 ### C++
-
+#### Autor:
 
 ```cpp
 #include <iostream>
