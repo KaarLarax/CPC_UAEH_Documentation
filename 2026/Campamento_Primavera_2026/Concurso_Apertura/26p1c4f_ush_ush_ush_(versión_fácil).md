@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/ushvf
 
 # 26P1C4F. ush ush ush (Versión fácil)
+#### Autor: Ignacio_benq
 
 ## Descripción
 Luego de superar los obstaculos con la fuerte neblina, Maullín, en su recorrido por el bosque, se encuentra cara a cara con un lobo que lo mira con hambre.
