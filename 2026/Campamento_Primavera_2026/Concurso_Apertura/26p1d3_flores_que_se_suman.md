@@ -57,13 +57,13 @@ Imprime el valor de $f(a, b)$.
 - 
 
 ## Propuesta de solución
-
+#### Autor:
 
 ## Implementación
 
 
 ### C++
-
+#### Autor:
 
 ```cpp
 #include <bits/stdc++.h>
@@ -82,21 +82,21 @@ int main()
 ```
 
 ### Java
-
+#### Autor:
 
 ```java
 
 ```
 
 ### Python
-
+#### Autor:
 
 ```python
 
 ```
 
 ### Kotlin
-
+#### Autor:
 
 ```kotlin
 
