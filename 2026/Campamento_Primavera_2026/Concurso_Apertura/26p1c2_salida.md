@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/salida
 
 # T26P1C2. Salida
+#### Autor: Soria
 
 ## Descripción
 *"Espero alegre la salida y espero no volver jamás."*
@@ -53,13 +54,13 @@ En el segundo caso, existe una única puerta, la cuál es la salida.
 - 
 
 ## Propuesta de solución
-
+#### Autor:
 
 ## Implementación
 
 
 ### C++
-
+#### Autor:
 
 ```cpp
 #include <bits/stdc++.h>
@@ -87,21 +88,21 @@ int main()
 ```
 
 ### Java
-
+#### Autor:
 
 ```java
 
 ```
 
 ### Python
-
+#### Autor:
 
 ```python
 
 ```
 
 ### Kotlin
-
+#### Autor:
 
 ```kotlin
 
