@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/contadorabeja
 
 # 26P1C1. Contaduría colmenerística
+#### Autor: Empanak
 
 ## Descripción
 Desde que empezó la primavera las abejas han andado de aquí para allá, hay mucho trabajo por hacer y casi no hay tiempo para descansar, pero están bien con eso. Sin embargo hay una de ellas que no está del todo a gusto, la abeja reina. Hay tanta miel en la colmena que ya no hay espacio para las abejas e incluso se fuga de los contenedores donde se guarda y es necesario ampliar el espacio o construir una nueva colmena para expandir sus capacidades de almacenamiento.
@@ -70,34 +71,34 @@ Para imprimir la respuesta con $6$ decimales, debes:
 - 
 
 ## Propuesta de solución
-
+#### Autor
 
 ## Implementación
 
 
 ### C++
-
+#### Autor
 
 ```cpp
 
 ```
 
 ### Java
-
+#### Autor
 
 ```java
 
 ```
 
 ### Python
-
+#### Autor
 
 ```python
 
 ```
 
 ### Kotlin
-
+#### Autor
 
 ```kotlin
 
