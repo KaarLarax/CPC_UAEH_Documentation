@@ -60,27 +60,48 @@ Para imprimir la respuesta con $6$ decimales, debes:
 0.0
 ```
 
-## Notas
-
-
 ## Temas identificados
 ### Matemáticas
 - 
 
 ### Programación
-- 
+- Ciclos
+- Acumuladores
 
 ## Propuesta de solución
-#### Autor
+#### Autor: Jordan
+
+No dicen que debemos encontrar la diferencia entre la miel que sabemos que tenemos y los registros que se tienen. Simplemente hay que restar la cantidad de miel que se sabe que tenemos con la total de miel que mencionan los registros.
 
 ## Implementación
 
+Realmente no necesitamos el arreglo de los registros, basta con acumular en una variable double los registros, luego restar del total de registros el total de miel almacenada que recibimos al inicio.
 
 ### C++
-#### Autor
+#### Autor: Jordan
+
+Como menciona la descripción, es necesario:
+- Agregar la librería ```<iomanip>```
+- Imprimir la respuesta así ```cout << fixed << setprecision(6) << respuesta;```
 
 ```cpp
+#include <bits/stdc++.h>
+#include <iomanip>
 
+using namespace std;
+
+int main() {
+	double c;
+	int n;
+	cin >> c >> n;
+	double total = 0;
+	for (int i = 0; i < n; i++) {
+	    double aux;
+	    cin >> aux;
+	    total += aux;
+	}
+	cout << fixed << setprecision(6) << total - c;
+}
 ```
 
 ### Java
