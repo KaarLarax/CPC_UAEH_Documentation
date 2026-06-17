@@ -98,9 +98,57 @@ En el segundo caso, sin importar hacia dónde corra Maullín, el lobo lo atrapar
 
 
 ### C++
-#### Autor:
+#### Autor: Jordan
 
 ```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    vector<pair<int, int>> lobos;
+
+    int n, m, MaullinN, MaullinM;
+    cin >> n >> m;
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= m; j++) {
+            string s;
+            cin >> s;
+            if (s == "L") {
+                lobos.push_back({i, j});
+            }
+            if (s == "M") {
+                MaullinN = i;
+                MaullinM = j;
+            }
+        }
+    }
+
+    bool negroM = false, negroL = false, blancoM = false, blancoL = false;
+
+    if ((MaullinN % 2 == 0 && MaullinM % 2 == 0) || (MaullinN % 2 == 1 && MaullinM % 2 == 1)) {
+        negroM = true;
+    } else {
+        blancoM = true;
+    }
+
+    for (auto [LoboN, LoboM] : lobos) {
+        if ((LoboN % 2 == 0 && LoboM % 2 == 0) || (LoboN % 2 == 1 && LoboM % 2 == 1)) {
+            negroL = true;
+        } else {
+            blancoL = true;
+        }
+    }
+
+    if ((negroM && negroL) || (!negroM && !negroL) || (blancoM && blancoL) || (!blancoM && !blancoL)) {
+        cout << "jeje";
+    } else {
+        cout << "ay maullin";
+    }
+}
 
 ```
 
