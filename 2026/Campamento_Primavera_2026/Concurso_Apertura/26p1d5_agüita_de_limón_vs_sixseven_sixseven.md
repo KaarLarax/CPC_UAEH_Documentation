@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/aguitadelimonvs67
 
 # 26P1D5. Agüita de limón vs sixseven sixseven
+#### Autor: wisperfrog
 
 ## Descripción
 El calor nos está matando de sed y, a pesar de que todo el mundo carga su botella de agua, ésta no dura más de $5$ minutos.
@@ -67,11 +68,6 @@ ganaste $5 \cdot 10 = 50$ pesos, ganancia = 50
 En el segundo caso, únicamente le vendes a los grupos de $10$, $11$ y $10$ personas.
 Tu ganancia total es de ${(10 \cdot 2)+(11 \cdot 2)+(10 \cdot 2) = 20+22+20 = 62}$ pesos.
 
-
-
-
-
-
 ## Temas identificados
 ### Matemáticas
 - 
@@ -80,13 +76,13 @@ Tu ganancia total es de ${(10 \cdot 2)+(11 \cdot 2)+(10 \cdot 2) = 20+22+20 = 62
 - 
 
 ## Propuesta de solución
-
+#### Autor: 
 
 ## Implementación
 
 
 ### C++
-
+#### Autor: 
 
 ```cpp
 #include <bits/stdc++.h>
