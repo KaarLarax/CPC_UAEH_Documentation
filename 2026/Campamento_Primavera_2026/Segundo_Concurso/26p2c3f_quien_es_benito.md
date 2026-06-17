@@ -49,9 +49,10 @@ En el segundo la suma es \(2 + 3 + 4 = 9\), impar. Le toca seguir moviendo pieza
 ### Matemáticas
 - Módulo
 - Sumatoria de Gauss
+- Jerarquía de operaciones
 
 ### Programación
-- 
+- Condicionales
 
 ## Propuesta de solución
 #### Autor: Jordan
@@ -88,7 +89,6 @@ using namespace std;
 
 int main()
 {
-    cin.tie(0); ios::sync_with_stdio(false);
     long long int a, b;
     cin >> a >> b;
     long long int s = (b * (b + 1)) / 2 - ((a - 1) * (a)) / 2;
