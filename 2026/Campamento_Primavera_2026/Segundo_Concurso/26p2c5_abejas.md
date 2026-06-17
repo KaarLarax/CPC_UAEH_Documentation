@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/abejas
 
 # 26P2C5. Abejas
+#### Autor: Soria
 
 ## Descripción
 *"Si el sol está solificándose y la luna vive lunizándose..."*
@@ -24,7 +25,6 @@ Seguido por $Q$ líneas conformadas por dos enteros $L$ y $R$, donde $(1 \leq L 
 
 ## Salida
 $Q$ enteros, la suma de los rangos después del filtrado.
-
 
 ## Ejemplo
 
@@ -60,13 +60,14 @@ En la tercera misión, Honey vacía el pelotón, haciendo que la suma sea de $0$
 - 
 
 ## Propuesta de solución
+#### Autor: 
 
 
 ## Implementación
 
 
 ### C++
-
+#### Autor: 
 
 ```cpp
 
