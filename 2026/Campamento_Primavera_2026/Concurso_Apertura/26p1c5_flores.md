@@ -65,16 +65,50 @@ En el tercer caso, lamentablemente Honey no tiene forma de recolectar de forma e
 - 
 
 ## Propuesta de solución
+#### Autor: 
 
 
 ## Implementación
-#### Autor:
 
 ### C++
-#### Autor:
+#### Autor: Jordan
 
 ```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int a[200005];
+
+int main() {
+    long long int n, polen;
+    cin >> n >> polen;
+
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+    }
+
+    int l = 1, r = 1;
+    int combinaciones = 0;
+    long long int total = a[l];
+    while (l <= n && r <= n) {
+        if (total == polen) {
+            combinaciones++;
+            total -= a[l];
+            l++;
+        }
+        if (total < polen) {
+            r++;
+            total += a[r];
+        }
+        if (total > polen) {
+            total -= a[l];
+            l++;
+        }
+    }
+
+    cout << combinaciones;
+}
 ```
 
 ### Java
