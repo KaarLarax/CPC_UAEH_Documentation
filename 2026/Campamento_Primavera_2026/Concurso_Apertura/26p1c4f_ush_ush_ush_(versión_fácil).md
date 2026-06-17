@@ -84,15 +84,41 @@ En el segundo caso, sin importar hacia dónde corra Maullín, el lobo lo atrapar
 - 
 
 ## Propuesta de solución
+#### Autor:
 
 
 ## Implementación
-#### Autor:
+
 
 ### C++
-#### Autor:
+#### Autor: Jordan
 
 ```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    int n, m;
+    cin >> n >> m;
+
+    int MaullinN, MaullinM, LoboN, LoboM;
+    cin >> MaullinN >> MaullinM >> LoboN >> LoboM;
+
+    bool negroM = false, negroL = false;
+
+    if ((MaullinN % 2 == 0 && MaullinM % 2 == 0) || (MaullinN % 2 == 1 && MaullinM % 2 == 1))
+        negroM = true;
+    if ((LoboN % 2 == 0 && LoboM % 2 == 0) || (LoboN % 2 == 1 && LoboM % 2 == 1))
+        negroL = true;
+
+    if ((negroM && negroL) || (!negroM && !negroL))
+        cout << "jeje";
+    else
+        cout << "ay maullin";
+}
 
 ```
 
