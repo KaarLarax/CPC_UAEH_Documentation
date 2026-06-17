@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/vuela
 
 # 26P2D2. Vuela
+#### Autor: Soria
 
 ## Descripción
 *"Quiero hacerte siempre sonreir."*
@@ -46,13 +47,14 @@ En el primer caso, dadas las 3 medidas, el volumen se puede definir como \(2 \cd
 - 
 
 ## Propuesta de solución
+#### Autor: 
 
 
 ## Implementación
 
 
 ### C++
-
+#### Autor: mae
 
 ```cpp
 #include <bits/stdc++.h>
