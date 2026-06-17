@@ -58,7 +58,7 @@ En el segundo caso la suma es $2 + 3 = 5$, no es múltiplo de tres. Le toca segu
 ## Propuesta de solución
 #### Autor: Jordan
 
-Se pide sumar todos los números entre un intervalo dado, si bien el intervalo puede ser 1 a 3, pero tambien puede ser 1 a 1000000000000000000, por lo que desde el principio se descarta abordar el problema con un ciclo, no dará tiempo
+Se pide sumar todos los números entre un intervalo dado, el intervalo puede ser 1 a 3, pero también puede ser 1 a 1000000000000000000, por lo que desde el principio se descarta abordar el problema con un ciclo, no dará tiempo
 
 Lo que sí podemos hacer es aplicar fórmulas para convertir un proceso lineal en uno constante, la **Suma de Gauss** es una fórmula muy usada, de la que me voy a saltar su deducción matemática, pero nos servirá para sumar todos los números entre $1$ y el número que especifiquemos:
 
