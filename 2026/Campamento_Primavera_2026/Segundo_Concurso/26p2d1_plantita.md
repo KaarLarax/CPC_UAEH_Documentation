@@ -46,13 +46,14 @@ En el primer caso, la plantita tiene un tamaño $1$ inicialmente, terminando con
 - 
 
 ## Propuesta de solución
+#### Autor: 
 
 
 ## Implementación
 
 
 ### C++
-
+#### Autor: mae
 
 ```cpp
 #include <bits/stdc++.h>
