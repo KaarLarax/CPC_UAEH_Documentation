@@ -2,7 +2,7 @@
 https://www.cpcjudge.com/problem/plantita
 
 # 26P2D1. Plantita
-### Autor: Soria
+#### Autor: Soria
 
 ## Descripción
 *"Ya no es lo mismo que ayer, cuando el mundo nos vio florecer..."*
