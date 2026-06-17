@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/noloentenderias
 
 # 26P2D3. no lo entenderias, es aesthetic
+#### Autor: xenredda
 
 ## Descripción
 Melisa, es una estudiante de artes visuales que está preparando a contrareloj su nueva exposición inspirada en la primavera. Para inspirarse y entrar en un verdadero trance artístico, le encanta pintar su lienzo primaveral mientras escucha música a todo volumen. Curiosamente, las flores y mariposas le quedan mucho mejor cuando tiene en repetición a Fiona Apple, Bjork o un poco de Kanye West.
@@ -60,13 +61,14 @@ FLOOOOOOOOOOR
 - 
 
 ## Propuesta de solución
+#### Autor: 
 
 
 ## Implementación
 
 
 ### C++
-
+#### Autor: mae
 
 ```cpp
 #include <bits/stdc++.h>
