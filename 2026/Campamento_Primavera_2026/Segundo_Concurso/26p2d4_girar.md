@@ -60,6 +60,8 @@ En el tercer caso, $19$ está $26$ grados abajo de $45$.
 - Condicionales
 
 ## Propuesta de solución
+#### Autor: Jordan
+
 Se identifican tres situaciones posibles para este problema; para la primera situación, si el número $N$ es mayor que $60$, entonces hacemos $N-60$; para la segunda situación, si $N$ es menor o igual que $60$ y mayor o igual que $45$, entonces ya estamos en el intervalo deseado; y para la tercera situación, si $N$ es menor que $45$, entonces hacemos $45-N$.
 
 ## Implementación
@@ -73,7 +75,7 @@ Se puede hacer con condicionales en cascada o en bloques if individuales, solo h
     - $N - 60$
 
 ### C++
-
+#### Autor: Jordan
 
 ```cpp
 #include <bits/stdc++.h>
