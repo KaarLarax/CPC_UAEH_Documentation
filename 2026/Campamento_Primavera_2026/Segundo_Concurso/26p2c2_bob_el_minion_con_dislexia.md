@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/bobminiondislexia
 
 # 26P2C2. Bob, el minion con dislexia
+#### Autor: wisperfrog
 
 ## Descripción
 Bob, el pequeño minion, empezó a ir a la escuela con Agnes y aprendió a escribir textos en español. Escribe sobre perros, sobre zapatos, sobre árboles, sobre la Segunda Guerra Mundial, etc. Y un día, en la escuela le encomendaron hacer varios textos sobre la primavera, los cuales iba a presentar en cada una de sus clases.
