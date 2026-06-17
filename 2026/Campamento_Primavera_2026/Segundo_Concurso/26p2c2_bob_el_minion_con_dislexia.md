@@ -80,20 +80,35 @@ los dorilocos con cueritos uf papoi
 ```
 
 ## Temas identificados
-### Matemáticas
-- 
-
 ### Programación
-- 
+- Ciclos
+- Condicionales
+- Manejo de cadenas
 
 ## Propuesta de solución
+#### Autor: Jordan
 
+Observamos que hay un diccionario especifico de palabras mal escritas que hay que corregir, por lo que solo necesitamos separar las palabras de cada frase, reconocer que se encuentra en nuestro diccionario y reemplazarla, para separar las palabras lo idea sería que no hubiera signos de puntuación como comas, puntos, punto y coma, signos de interrogación o admiración, como lo es en este caso, por lo que basta con separar las palabras por espacios.
 
 ## Implementación
+Si ya tenemos la frase completa en una cadena, debemos agregar un espacio al final, para después recorrer caracter por caracter, si es una caracter cualquiera lo concatenamos en una variable string, que comienza vacía, que nos va a servir para generar cada palabra caracter por caracter, en caso de que el caracter actual sea un espacio, entonces podemos identificar si la palabra hasta el momento es igual que alguna de las de nuestro diccionario, si lo es, sobreescribimos la variable palabra, si no, la variable palabra se queda tal cual está y se concatena en una variable de respuesta que nos va a servir para generar la frase completa corregida, concatenamos un espacio después de cada palabra y reseteamos la variable palabra. 
 
+Finalmente, cuando se acaben los caracteres en la cadena original, tendremos la frase corregida completa y la imprimimos con un salto de línea al final.
 
 ### C++
+#### Autor: Jordan
 
+Después de obtener la cantidad de frases es necesario escribir la instrucción ```cin.ignore```.
+
+Podemos leer la frase completa con ```getline(cin, tu_variable_string)``` que puede leer toda la frase en una sola cadena, incluyendo los espacios, solo se detiene cuando hay un salto de línea, contrario a usar solo ```cin``` porque separa las entradas según los espacios.
+
+En C++, los strings son vectores, por lo que podemos ocupar métodos como ```push_back()```, además podemos comparar cada posición con un ```char``` y recorrer todos los caracteres de la cadena con un ciclo for each sin necesidad de saber cuantos caracteres tenemos.
+
+Para poder tener un bloque de entradas y un bloque de salidas, se usan las líneas:
+```cpp
+cin.tie(0);
+ios::sync_with_stdio(false);
+```
 
 ```cpp
 #include <bits/stdc++.h>
@@ -137,12 +152,9 @@ int main()
                 p = "";
             } else {
                 p.push_back(c);
-            }
-            
+            }    
         }
-        
-        cout << r << '\n';
-        
+        cout << r << '\n';   
     }
 
     return 0;
