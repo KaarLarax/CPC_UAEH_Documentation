@@ -55,17 +55,33 @@ FLOOOOOOOOOOR
 
 ## Temas identificados
 ### Matemáticas
-- 
+- Ninguno
 
 ### Programación
-- 
+- Ciclos
+- Cadenas de texto
+- Entrada y salida estándar
 
 ## Propuesta de solución
-#### Autor: 
+#### Autor: mae
+El problema nos pide construir una palabra a partir de un número entero $E$.
 
+La palabra siempre debe comenzar con "FL" y terminar con "R", pero la cantidad de letras "O" que aparecen entre ambas partes depende del valor de $E$.
+
+Por ejemplo:
+- E = 1  -> FLOR
+- E = 3  -> FLOOOR
+- E = 5  -> FLOOOOOR
+
+La forma más sencilla de resolverlo es crear una cadena inicial con el texto "FL" y después agregar una letra "O" exactamente $E$ veces mediante un ciclo.
+Una vez agregadas todas las letras necesarias, solo queda imprimir la cadena seguida de la letra "R".
 
 ## Implementación
+Se utiliza una variable de tipo string para almacenar el resultado.
 
+Primero se inicializa la cadena con "FL". Después, mediante un ciclo for, se agrega una letra "O" en cada iteración hasta completar la cantidad indicada por $E$.
+
+Finalmente, se imprime la cadena construida y se agrega la letra "R" al final.
 
 ### C++
 #### Autor: mae
