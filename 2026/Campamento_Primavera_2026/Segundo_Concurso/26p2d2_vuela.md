@@ -41,17 +41,26 @@ En el primer caso, dadas las 3 medidas, el volumen se puede definir como \(2 \cd
 
 ## Temas identificados
 ### Matemáticas
-- 
+- Multiplicación
 
 ### Programación
-- 
+- Entrada y salida estándar
+- Operaciones aritméticas
 
 ## Propuesta de solución
-#### Autor: 
+#### Autor: mae
+El problema nos proporciona tres dimensiones: ancho, alto y largo y se nos pide calcular su volumen.
+Sabemos que el volumen de un prisma rectangular se obtiene multiplicando sus tres dimensiones:
+
+Volumen = ancho * alto * largo
+
+Por lo tanto, basta con leer los valores de (X), (Y) y (Z), realizar la multiplicación y mostrar el resultado.
+
+Las restricciones son muy pequeñas, por lo que una variable de tipo **int** es más que suficiente para almacenar el resultado.
 
 
 ## Implementación
-
+Solo necesitamos almacenar los tres valores enteros proporcionados en la entrada y multiplicarlos.
 
 ### C++
 #### Autor: mae
