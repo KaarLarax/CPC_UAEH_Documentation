@@ -62,11 +62,12 @@ Para la segunda fila, un acomodo válido es **0101**. Se puede demostrar que no 
 Para la cuarta fila, no existe lugar disponible, por lo que la respuesta es **4**.
 
 ## Temas identificados
-### Matemáticas
-- 
 
 ### Programación
-- 
+- Ciclos
+- Manejo de cadenas
+- Acumuladores
+- Contadores
 
 ## Propuesta de solución
 #### Autor: Jordan
@@ -126,6 +127,12 @@ Finalmente imprimimos el total de personas, y así con cada fila.
 
 ### C++
 #### Autor: Jordan
+
+Usamos las siguientes líneas para tener un bloque claro de entradas y otro bloque de salidas
+```cpp
+cin.tie(0);
+ios::sync_with_stdio(false);
+```
 
 ```cpp
 #include <bits/stdc++.h>
