@@ -69,13 +69,63 @@ Para la cuarta fila, no existe lugar disponible, por lo que la respuesta es **4*
 - 
 
 ## Propuesta de solución
-#### Autor:
+#### Autor: Jordan
+
+Lo primero que podemos formalizar es que cada 3 asientos vacios, es posible colocar a una persona, se puede representar con una pirámide según la cantidad de sillas y la cantidad mínima de personas que podemos sentar:
+
+	1			1
+	1		   0 1
+	1		  0 1 0
+	2		 0 1 0 1
+	2		0 1 0 0 1
+	2	   0 1 0 0 1 0
+	3	  0 1 0 0 1 0 1
+
+Y así sucesivamente, por lo que siempre que haya 3 asientos vacíos, ahí cabe una persona y para asegurarnos de que sea la menor cantidad posble, lo ponemos en el tercer asiento:
+
+	00000000
+
+	00100100
+
+Y claro que aún cabe una persona más en primera y última silla.
+
+	10100101
+
+Pero no es la solución más óptima, para esa cantidad de sillas, el mejor acomodo es de 3 personas y se ve así
+
+	01001001
+
+Por lo que, para empezar, la posición más óptima de la primera persona que vamos a sentar es en la segunda silla de la fila, después de ahí ya se pueden sentar cada 3 sillas vacías.
+
+Suponiendo que ya hubiera dos personas sentadas en la fila de la siguiente forma:
+
+	00100010
+
+Y seguimos estrictamente la regla de sentar a alguien en la segunda silla al inicio si las primeras dos sillas están vacías y luego sentar gente cada 3 sillas vacías
+
+	01100110
+
+Donde a simple vista parece que incumplimos la regla de sentar gente junta, sin embargo, esa forma es totalmente equivalente a
+
+	10101010
+
+Entonces sí se cumplen las reglas.
 
 ## Implementación
+Para poder hacer todo en una sola condición sin tomar casos especiales para la cadena, lo primero que hay que hacer, es agregar caracteres '0' al inicio y al final de la cadena ingresada, en esta cadena ya se encuentran todas las sillas libres y ocupadas, de forma que tenemos:
 
+	 000010010
+	 
+	00000100100
+
+Y así ya podemos siempre cumplir la condición de encontrar tres ceros y poner un 1 en el tercer espacio, realmente no es necesario modificar la cadena, solo debemos hacer un conteo de $0's$ y un conteo de $1's$ que vamos viendo o añadiendo.
+
+Cada que veamos un '0', sumamos 1 a la variable de ceros, si la variable ceros llega a ser 3, entonces la reseteamos ceros a 0 y sumamos 1 al total de personas, si vemos un '1', entonces sumamos 1 al total de personas y reseteamos la variable ceros a 0.
+
+Finalmente imprimimos el total de personas, y así con cada fila.
 
 ### C++
-#### Autor:
+#### Autor: Jordan
 
 ```cpp
 #include <bits/stdc++.h>
@@ -92,7 +142,7 @@ int main() {
 	    cin >> n;
 	    string s;
 	    cin >> s;
-       s = '0' + s + '0';
+        s = '0' + s + '0';
 	    int t = 0, ceros = 0;
 	    for (int i = 0; i < n + 2; i++) {
             if (s[i] == '0') {
