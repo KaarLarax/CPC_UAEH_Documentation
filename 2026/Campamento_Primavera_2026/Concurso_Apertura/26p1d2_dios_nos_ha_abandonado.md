@@ -47,20 +47,19 @@ todo bien, un paste de papa y se me quita
 - En el segundo ejemplo (**6**) el valor de temperatura es mayor a 8, por lo tanto se imprime "todo bien, un paste de papa y se me quita"
 
 ## Temas identificados
-### Matemáticas
-- 
-
 ### Programación
-- 
+- Condicionales
 
 ## Propuesta de solución
-#### Autor:
+#### Autor: Jordan
+
+Si el número $t$ es menor que 8, la solución es "dios nos ha abandonado", si $t$ es mayor o igual que 8, entonces la solución es "todo bien, un paste de papa y se me quita".
 
 ## Implementación
-
+Leer la variable $t$, hacer una condición ````t < 8```, si es verdadero imprimir "todo bien, un paste de papa y se me quita", si no, imprimir "dios nos ha abandonado".
 
 ### C++
-#### Autor:
+#### Autor: mae
 
 ```cpp
 #include <iostream>
