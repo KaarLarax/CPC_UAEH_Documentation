@@ -86,16 +86,32 @@ En el segundo caso, sin importar hacia dónde corra Maullín, el lobo lo atrapar
 
 ## Temas identificados
 ### Matemáticas
-- 
+- Módulo
 
 ### Programación
-- 
+- Ciclos
+- Condicionales
+- Estructuras de datos
 
 ## Propuesta de solución
-#### Autor:
+#### Autor: Jordan
+
+Este es otro ejemplo de los problemas "lo que te digo que hagas, eso no", porque no se trata de hacer una simulación entre el lobo y el gato, o de saber en cuantos segundos podría ser atrapado el gato, solamente hay dos respuestas, lo atrapa o no lo atrapa, y al tratarse de turnos, basta con hacer un par de casos en papel para darse cuenta de algunas cosas:
+
+- Se puede ver como un tablero de ajedrez con casillas negras y blancas intercaladas, pero con números en filas y columnas.
+- Si ambos números son impares o ambos números son pares, está en una casilla negra.
+- Si un número es par y el otro no, entonces se encuentra en una casilla blanca.
+- Si ambos, Maullin y el Lobo, se encuentran en el mismo color de casilla, Maullin siempre es cazado.
+- Si Maullin y el Lobo se encuentran en casillas de distinto color, Maullin siempre escapa.
+
+Así que solo queda averiguar en qué color de casilla se encuentra cada personaje, sin necesidad de representar la matriz, y comparar el color de la casilla en la que se encuentran.
 
 ## Implementación
+Podemos saber en que color de casilla se encuentra Maullin si sabemos en qué fila y columna se encuentra, para eso podemos ir leyendo cadena por cadena para ver si es una 'M', si lo es, almacenamos las coordenadas; usamos el módulo de 2 para saber si están en una fila y columna par o si están en una fila y columna impar, que es lo mismo, luego podemos ocupar una variable booleana por cada personaje, que se vuelva verdadera si se cumplió la condición antes mencionada, si se volvió verdadera entonces está en una casilla negra, si no, entonces está en una casilla blanca.
 
+Para los Lobos, podemos solo almacenar las coordenadas de los lobos según van apareciendo como una 'L', y se repite el procedimiento para saber en que color de casilla se encuentra cada Lobo.
+
+Ya que sabemos en que color se encuentra cada personaje, ahora podemos hacer la comparación, si ambos se encuentran en el mismo color de casilla, entonces imprimimos "jeje", sino, imprimimos "ay maullin".
 
 ### C++
 #### Autor: Jordan
