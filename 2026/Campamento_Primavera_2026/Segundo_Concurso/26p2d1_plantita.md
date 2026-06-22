@@ -39,18 +39,16 @@ Un entero $X$, la altura final de la plantita.
 En el primer caso, la plantita tiene un tamaño $1$ inicialmente, terminando con un tamaño $1 \cdot 3 = 3$.
 
 ## Temas identificados
-### Matemáticas
-- 
-
 ### Programación
-- 
+- Entrada y Salida
 
 ## Propuesta de solución
-#### Autor: 
+#### Autor: Jordan
 
+Solo hay que multiplicar $n \times 3$.
 
 ## Implementación
-
+Leer el número $n$ y al imprimir escribimos ```n * 3```.
 
 ### C++
 #### Autor: mae
