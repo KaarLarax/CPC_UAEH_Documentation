@@ -48,6 +48,13 @@ En el primer caso, la plantita tiene un tamaño $1$ inicialmente, terminando con
 Solo hay que multiplicar $n \times 3$.
 
 ## Implementación
+```mermaid
+graph TD;
+A([Inicio]) --> B[/Leer n/];
+B --> C[\Imprimir n * 3\];
+C --> D([Fin]);
+```
+
 Leer el número $n$ y al imprimir escribimos ```n * 3```.
 
 ### C++
