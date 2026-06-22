@@ -59,16 +59,21 @@ En el tercer caso, lamentablemente Honey no tiene forma de recolectar de forma e
 
 ## Temas identificados
 ### Matemáticas
-- 
+- Subconjuntos
 
 ### Programación
-- 
+- Two Pointer
+- Ciclos
+- Condicionales
+- Arreglos
 
 ## Propuesta de solución
-#### Autor: 
+#### Autor: Jordan
+Debemos conseguir los subarreglos donde al sumar sus elementos, el resultado sea exactamente la cantidad de polen que Honey quiere recolectar, una de las formas de recorrer todos los subarreglos que posiblemente nos interesen, es con la técnica Two Pointer, donde tenemos dos variables que nos indican los índices a recorrer.
 
 
 ## Implementación
+En Two pointer, tenemos un índice L y otro R, que ambos comienzan en 1, y una variable acumuladora que comienza con el valor del arreglo en L, si la suma es igual a la cantidad de polen, entonces sumamos 1 a un contador de combinaciones posibles que imprimiremos al final, si la suma es menor que el polen deseado, entonces sumamos 1 a R y sumamos el valor en R a la suma, pues sabemos que todos los valores del arreglo son positivos y agregar el siguiente número siempre va a hacer que aumente la suma total, y si la suma es mayor que el polen deseado, entonces restamos el valor del arreglo en L a la suma y sumamos 1 a L. Así sucesivamente hasta que L o R sean mayores que el número de elementos en el arreglo, en cuyo caso, ya terminamos con la búsqueda y ya se encontraron todas los subarreglos con la suma igual.
 
 ### C++
 #### Autor: Jordan
