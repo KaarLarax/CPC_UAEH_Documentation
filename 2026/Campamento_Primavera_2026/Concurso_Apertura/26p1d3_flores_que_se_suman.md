@@ -51,19 +51,20 @@ Imprime el valor de $f(a, b)$.
 
 ## Temas identificados
 ### Matemáticas
-- 
+- Funciones
 
 ### Programación
-- 
+- Entrada y Salida
 
 ## Propuesta de solución
-#### Autor:
+#### Autor: Jordan
+La respuesta es siempre la operacion ${2 \times (a+b)}$.
 
 ## Implementación
-
+Leer $a$, $b$, para que al imprimir se haga la operación ```2 * (a + b)```.
 
 ### C++
-#### Autor:
+#### Autor: mae
 
 ```cpp
 #include <bits/stdc++.h>
