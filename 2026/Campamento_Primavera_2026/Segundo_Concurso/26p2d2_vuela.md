@@ -58,8 +58,14 @@ Por lo tanto, basta con leer los valores de (X), (Y) y (Z), realizar la multipli
 
 Las restricciones son muy pequeñas, por lo que una variable de tipo **int** es más que suficiente para almacenar el resultado.
 
-
 ## Implementación
+```mermaid
+graph TD;
+A([Inicio]) -> B[/Leer x, y, z/];
+B --> C[\Imprimir x * y * z\]
+C --> D([Fin])
+```
+
 Solo necesitamos almacenar los tres valores enteros proporcionados en la entrada y multiplicarlos.
 
 ### C++
