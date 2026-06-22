@@ -61,9 +61,6 @@ Para imprimir la respuesta con $6$ decimales, debes:
 ```
 
 ## Temas identificados
-### Matemáticas
-- 
-
 ### Programación
 - Ciclos
 - Acumuladores
