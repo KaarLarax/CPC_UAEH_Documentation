@@ -43,20 +43,18 @@ Para imprimir la respuesta con 2 decimales, debes:
 En el primer caso Coco terminó en 1 segundo después de que el juez activara el cronómetro, mientras que su contrincante en 4 segundos, dejando una diferencia de 3 segundos.
 
 ## Temas identificados
-### Matemáticas
-- 
-
 ### Programación
-- 
+- Entrada y Salida
 
 ## Propuesta de solución
-#### Autor:
+#### Autor: Jordan
+La respuesta siempre es imprimir $b - a$.
 
 ## Implementación
-
+Leer a y b, para imprimir $b - a$, pero la instrucción de impresión debe mantener dos decimales.
 
 ### C++
-#### Autor:
+#### Autor: Jordan
 
 ```cpp
 #include <bits/stdc++.h>
@@ -65,8 +63,6 @@ En el primer caso Coco terminó en 1 segundo después de que el juez activara el
 using namespace std;
 
 int main() {
-    cin.tie(0); ios::sync_with_stdio(false);
-
     double a, b;
     cin >> a >> b;
     cout << fixed << setprecision(2) << b - a;
