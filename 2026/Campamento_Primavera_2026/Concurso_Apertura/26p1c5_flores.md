@@ -73,7 +73,11 @@ Debemos conseguir los subarreglos donde al sumar sus elementos, el resultado sea
 
 
 ## Implementación
-En Two pointer, tenemos un índice L y otro R, que ambos comienzan en 1, y una variable acumuladora que comienza con el valor del arreglo en L, si la suma es igual a la cantidad de polen, entonces sumamos 1 a un contador de combinaciones posibles que imprimiremos al final, si la suma es menor que el polen deseado, entonces sumamos 1 a R y sumamos el valor en R a la suma, pues sabemos que todos los valores del arreglo son positivos y agregar el siguiente número siempre va a hacer que aumente la suma total, y si la suma es mayor que el polen deseado, entonces restamos el valor del arreglo en L a la suma y sumamos 1 a L. Así sucesivamente hasta que L o R sean mayores que el número de elementos en el arreglo, en cuyo caso, ya terminamos con la búsqueda y ya se encontraron todas los subarreglos con la suma igual.
+En Two pointer, tenemos un índice L y otro R, que ambos comienzan en 1, y una variable acumuladora que comienza con el valor del arreglo en L, si la suma es igual a la cantidad de polen, entonces sumamos 1 a un contador de combinaciones posibles que imprimiremos al final, si la suma es menor que el polen deseado, entonces sumamos 1 a R y sumamos el valor en R a la suma, pues sabemos que todos los valores del arreglo son positivos y agregar el siguiente número siempre va a hacer que aumente la suma total, y si la suma es mayor que el polen deseado, entonces restamos el valor del arreglo en L a la suma y sumamos 1 a L.
+
+Así sucesivamente hasta que L o R sean mayores que el número de elementos en el arreglo, en cuyo caso, ya terminamos con la búsqueda y ya se encontraron todas los subarreglos con donde la suma es exactamente la cantidad de polen requerido.
+
+Solo queda imprimir la cantidad de subarreglos o combinaciones encontradas.
 
 ### C++
 #### Autor: Jordan
