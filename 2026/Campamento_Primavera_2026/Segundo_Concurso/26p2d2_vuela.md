@@ -61,7 +61,7 @@ Las restricciones son muy pequeñas, por lo que una variable de tipo **int** es 
 ## Implementación
 ```mermaid
 graph TD;
-A([Inicio]) -> B[/Leer x, y, z/];
+A([Inicio]) --> B[/Leer x, y, z/];
 B --> C[\Imprimir x * y * z\]
 C --> D([Fin])
 ```
