@@ -47,20 +47,25 @@ En el primer caso, el texto en la posición *3* es el que cuenta con la salida.
 En el segundo caso, existe una única puerta, la cuál es la salida.
 
 ## Temas identificados
-### Matemáticas
-- 
-
 ### Programación
-- 
+- Ciclos
+- Condicionales
 
 ## Propuesta de solución
-#### Autor:
+#### Autor: Jordan
+Se nos da una lista de palabras, y se asegura que una de ellas dice "SALIDA", por lo que solo tenemos que encontrar en que número de palabra apareció la salida.
 
 ## Implementación
-
+Durante la lectura de las palabras podemos comparar si la palabra recién leída dice "SALIDA", si es verdadero, lo imprimimos, si no, no hacemos nada.
 
 ### C++
-#### Autor:
+#### Autor: mae
+Es necesario pausar la salida de la consola con las líneas:
+```cpp
+cin.tie(0);
+ios::sync_with_stdio(false);
+```
+Para leer todas las palabras y que la impresión del número donde apareció la salida sea al final.
 
 ```cpp
 #include <bits/stdc++.h>
