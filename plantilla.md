@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/
 
 # Título
-#### Autor
+#### Autor: 
 
 ## Descripción
 
@@ -34,7 +34,7 @@ https://www.cpcjudge.com/problem/
 - 
 
 ## Propuesta de solución
-#### Autor
+#### Autor: 
 
 
 ## Implementación
@@ -42,28 +42,28 @@ https://www.cpcjudge.com/problem/
 
 ### C++
 
-#### Autor
+#### Autor: 
 ```cpp
 
 ```
 
 ### Java
 
-#### Autor
+#### Autor: 
 ```java
 
 ```
 
 ### Python
 
-#### Autor
+#### Autor: 
 ```python
 
 ```
 
 ### Kotlin
 
-#### Autor
+#### Autor: 
 ```kotlin
 
 ```
