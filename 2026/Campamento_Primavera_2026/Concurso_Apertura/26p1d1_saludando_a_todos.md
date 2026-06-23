@@ -37,6 +37,11 @@ Siempre la salida es "hola mundo".
 ## Implementación
 Imprimir en consola "hola mundo".
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[\hola mundo\] --> C([Fin])
+```
+
 ### C++
 #### Autor: mae
 
