@@ -73,6 +73,20 @@ Si los números empiezan a duplicarse de derecha a izquierda empezando en $1$, e
 ## Implementación
 Comenzando desde $0$ de derecha a izquierda, si el contenido de la cadena en una posición $i$ es igual a $1$, entonces sumamos el resultado de elevar $2^i$ a un total. 
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/s/]
+B --> C(total = 0)
+C --> D{{Desde i = 9, j = 0
+        Hasta i >= 0
+        Decremento en i de 1
+        Incremento en j de 1}}
+D --> E{"s[i] == '1'"}
+E --V--> F("pow(2, j)") --> D
+D --> G[\total\]
+G --> H([Fin])
+```
+
 ### C++
 #### Autor: Jordan
 
