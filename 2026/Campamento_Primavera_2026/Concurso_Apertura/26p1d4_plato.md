@@ -53,6 +53,12 @@ La respuesta siempre es imprimir $b - a$.
 ## Implementación
 Leer a y b, para imprimir $b - a$, pero la instrucción de impresión debe mantener dos decimales.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/a, b/]
+B --> C[\b - a\]
+C --> D([Fin])
+```
 ### C++
 #### Autor: Jordan
 
