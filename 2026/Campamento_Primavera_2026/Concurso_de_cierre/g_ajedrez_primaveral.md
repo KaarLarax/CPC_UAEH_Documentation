@@ -135,6 +135,11 @@ E --> J{caso 'K'}
 J --> K[\"Imprimir ((n + 1) / 2) * ((m + 1) / 2)"\]
 E --> L{caso 'k'}
 L --> M[\"Imprimir ((n * m) + 1) / 2"\]
+N([" "]) --> C
+G --> N
+I--> N
+K --> N
+M --> N
 C --> Z([Fin])
 ```
 
