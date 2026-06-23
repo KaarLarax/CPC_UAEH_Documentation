@@ -70,19 +70,22 @@ Tu ganancia total es de ${(10 \cdot 2)+(11 \cdot 2)+(10 \cdot 2) = 20+22+20 = 62
 
 ## Temas identificados
 ### Matemáticas
-- 
+- Módulo
 
 ### Programación
-- 
+- Ciclos
+- Condicionales
 
 ## Propuesta de solución
-#### Autor: 
+#### Autor: Jordan
+
+Solamente si el grupo de personas no es divisible entre 6 y tampoco es divisible entre 7, entonces sí se contabilizan las ganancias. 
 
 ## Implementación
-
+Dicho de otra manera, si $C_i$ módulo 6 es diferente de 0 y $C_i$ módulo 7 es diferente de 0, entonces acumulamos la cantidad de personas de ese grupo en una suma, después haber leído los $N$ grupos, imprimimos la multiplicación $X \cdot suma$.
 
 ### C++
-#### Autor: 
+#### Autor: mae
 
 ```cpp
 #include <bits/stdc++.h>
