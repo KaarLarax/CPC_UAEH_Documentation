@@ -88,6 +88,22 @@ Y observar que la población sigue un patrón regular, la sucesión de Fibonacci
 ## Implementación
 Para ambas estrategias, basta con usar tres variables, y ya sea siguiendo las reglas de la descripción o la regla de Fibonacci se puede llegar a la solución iterando hasta $N$.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B(anteriorAnterior = 0
+                anterior = 1
+                actual = 1)
+B --> C[/segundo/]
+C --> D{{Desde i = 0
+            Hasta i < segundo - 1
+            Incremento 1}}
+D --> E(anteriorAnterior = anterior
+        anterior = actual
+        actual = anteriorAnterior + anterior) --> D
+D --> F[\actual\]
+F --> G([Fin])
+```
+
 ### C++
 #### Autor: Jordan
 
