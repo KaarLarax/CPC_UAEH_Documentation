@@ -63,6 +63,14 @@ La respuesta es siempre la operacion ${2 \times (a+b)}$.
 ## Implementación
 Leer $a$, $b$, para que al imprimir se haga la operación ```2 * (a + b)```.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/a, b/]
+B --> C[\"2 * (a + b)"\]
+
+C --> >([Fin])
+```
+
 ### C++
 #### Autor: mae
 
