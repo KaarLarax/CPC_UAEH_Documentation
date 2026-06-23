@@ -13,7 +13,7 @@ Como es bastante difícil calcular la solución a mano mientras intentan disfrut
 ## Entrada
 La primera línea de entrada contiene un entero $T$, el número de casos de prueba.
 
-<p>Cada caso de prueba consiste en una línea que contiene un carácter del conjunto { $r$, $k$, $Q$, $K$ }, que representan respectivamente las piezas Torre (Rook), Caballo (Knight), Reina (Queen) o Rey (King). El carácter es seguido por los enteros $m$ $(4 \le m \le 10)$ y $n$ $(4 \le n \le 10)$, que indican el número de filas y el número de columnas del tablero de ajedrez.
+Cada caso de prueba consiste en una línea que contiene un carácter del conjunto { $r$, $k$, $Q$, $K$ }, que representan respectivamente las piezas Torre (Rook), Caballo (Knight), Reina (Queen) o Rey (King). El carácter es seguido por los enteros $m$ $(4 \le m \le 10)$ y $n$ $(4 \le n \le 10)$, que indican el número de filas y el número de columnas del tablero de ajedrez.
 
 La casilla inferior izquierda es $(1, 1)$.
 
@@ -120,7 +120,22 @@ Observamos que los caballos siempre atacan a una casilla del color contrario al 
 La fórmula encontrada es $\frac{n \cdot m + 1}{2}$.
 
 ```mermaid
-
+graph TD;
+A([Inicio]) --> B[/leer t/]
+B --> C{{Desde i = 0
+Hasta i < t
+Incremento 1}}
+C --> D[/Leer pieza, n, m/]
+D --> E{pieza}
+E --> F{caso 'r'}
+F --> G[\"Imprimir min(n, m)"\]
+E --> H{caso 'Q'}
+H --> I[\"Imprimir min(n, m)"\]
+E --> J{caso 'K'}
+J --> K[\"Imprimir ((n + 1) / 2) * ((m + 1) / 2)"\]
+E --> L{caso 'k'}
+L --> M[\"Imprimir ((n * m) + 1) / 2"\]
+C --> Z([Fin])
 ```
 
 ### C++
@@ -145,10 +160,10 @@ using namespace std;
 int main() {
     cin.tie(0); ios::sync_with_stdio(false);
 
-  	int q;
-  	cin >> q;
+  	int t;
+  	cin >> t;
   
-  	for (int i = 0; i < q; i++) {
+  	for (int i = 0; i < t; i++) {
         char pieza;
         int n, m;
         cin >> pieza >> n >> m;
