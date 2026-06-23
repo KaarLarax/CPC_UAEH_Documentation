@@ -68,7 +68,7 @@ graph TD;
 A([Inicio]) --> B[/a, b/]
 B --> C[\"2 * (a + b)"\]
 
-C --> >([Fin])
+C --> Z([Fin])
 ```
 
 ### C++
