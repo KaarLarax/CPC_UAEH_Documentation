@@ -66,6 +66,22 @@ La respuesta depende de si el ultimo segundo es par o impar.
 ## Implementación
 Por cada caso podemos leer las semillas y los segundos, comprobar si el último segundo es par o impar con el módulo de $2$; si segundos es impar la respuesta es $x$, si segundos es impar, la respuesta es $0$.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/casos/]
+B --> C{{Desde i = 0
+        Hasta i < casos
+        Incremento 1}}
+C --> D[/semillas, segundos/]
+D --> E{segundos % 2 == 1}
+E --V--> F[\semillas\]
+E --F--> G[\0\]
+F --> X((" "))
+G --> X
+X --> C
+C --> Z([Fin])
+```
+
 ### C++
 
 #### Autor: mae
