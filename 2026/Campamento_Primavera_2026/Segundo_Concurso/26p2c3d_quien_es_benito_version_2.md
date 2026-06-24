@@ -78,6 +78,17 @@ La fórmula de Gauss se puede implementar como una operación en una misma líne
 
 Para ver si un número es divisible entre cualquier número, necesitamos ver si el módulo de la división es igual a 0, para este caso, si el resultado divido por $3$ tiene un módulo (residuo) igual a $0$, significa que el resultado es divisible entre $3$, los otros dos valores posibles para el módulo son $1$ y $2$, en cualquiera de esos dos casos, no es divisible entre $3$. El símbolo de módulo en programación es %.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/a, b/]
+B --> C(a = a % 3
+        b = b % 3)
+C --> D("s = (b * (b + 1)) / 2 - ((a - 1) * (a)) / 2")
+D --> E{s % 3 == 0}
+E --V--> F[\ya estuvo\]
+E --F--> G[\otro ratito\]
+```
+
 ### C++
 #### Autor: Jordan
 
