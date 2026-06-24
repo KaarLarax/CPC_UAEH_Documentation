@@ -74,6 +74,21 @@ Se puede hacer con condicionales en cascada o en bloques if individuales, solo h
 - Si $N > 60$
     - $N - 60$
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/n/]
+B --> C{n < 45}
+C --V--> D[\45 - n\]
+C --F--> E{n >= 45 && n <= 60}
+E --V--> F[\ahi mero es\]
+E --F--> G[\n - 60\]
+D --> X((" "))
+F --> X((" "))
+G --> X((" "))
+X --> Z([Fin])
+
+```
+
 ### C++
 #### Autor: Jordan
 
