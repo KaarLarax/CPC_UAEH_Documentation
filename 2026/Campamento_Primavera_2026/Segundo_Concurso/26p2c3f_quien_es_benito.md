@@ -77,6 +77,15 @@ La fórmula de Gauss se puede implementar como una operación en una misma líne
 
 Para ver si un número es divisible entre cualquier número, necesitamos ver si el módulo de la división es igual a 0, para este caso, si el resultado divido por $2$ tiene un módulo (residuo) igual a $0$, significa que el resultado es divisible entre $2$, el otro valor posible para el módulo es $1$, en ese caso no es divisible entre $2$. El símbolo de módulo en programación es %.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/a, b/]
+B --> D("s = (b * (b + 1)) / 2 - ((a - 1) * (a)) / 2")
+D --> E{s % 2 == 0}
+E --V--> F[\ya estuvo\]
+E --F--> G[\otro ratito\]
+```
+
 ### C++
 #### Autor: Jordan
 
