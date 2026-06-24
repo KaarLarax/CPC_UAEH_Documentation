@@ -87,6 +87,8 @@ C --> D("s = (b * (b + 1)) / 2 - ((a - 1) * (a)) / 2")
 D --> E{s % 3 == 0}
 E --V--> F[\ya estuvo\]
 E --F--> G[\otro ratito\]
+F --> Z([Fin])
+G --> Z([Fin])
 ```
 
 ### C++
