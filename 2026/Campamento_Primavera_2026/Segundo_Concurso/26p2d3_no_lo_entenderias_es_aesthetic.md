@@ -83,6 +83,19 @@ Primero se inicializa la cadena con "FL". Después, mediante un ciclo for, se ag
 
 Finalmente, se imprime la cadena construida y se agrega la letra "R" al final.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/e/]
+B --> C(s = &quot;FL&quot;)
+C --> D{{Desde i = 0
+            Hasta i < e
+            Incremento 1}}
+D --> E(s = s + &quot;O&quot;)
+E --> D
+D --> F[\s + &quot;R&quot;\]
+F --> Z([Fin])
+```
+
 ### C++
 #### Autor: mae
 
