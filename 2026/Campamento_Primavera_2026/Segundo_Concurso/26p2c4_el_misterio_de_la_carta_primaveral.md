@@ -97,6 +97,11 @@ Para la simulación, se requiere usar varios ciclos for, pero al ser solo 52 car
 
 Para el desarrollo algebraico solo hay que imprmir la posición $33$.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/a, b/]
+```
+
 ### C++
 Para mantener un bloque claro de entradas y un bloque de salidas, se utilizan las siguientes instrucciones, que pausan la salida hasta que se hacen todas las entradas:
 ```cpp
