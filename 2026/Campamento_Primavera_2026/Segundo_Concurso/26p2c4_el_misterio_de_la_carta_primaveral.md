@@ -99,7 +99,21 @@ Para el desarrollo algebraico solo hay que imprmir la posición $33$.
 
 ```mermaid
 graph TD;
-A([Inicio]) --> B[/a, b/]
+A([Inicio]) --> B[/q/]
+B --> M{{Desde i = 0
+		Hasta i < q
+		Incremento 1}}
+M --> C{{Desde j = 0
+		Hasta j < 52
+		Incremento 1}}
+C --> D[/carta/]
+D --> E{j == 33}
+E --V--> F[\carta\]
+E --F--> G((" "))
+F --> G
+G --> C
+C --> M
+B --> Z([Fin])
 ```
 
 ### C++
