@@ -281,6 +281,11 @@ Si no hay entradas ni salidas, es seguro que algo hay que imprimir y está descr
 
 Imprimir en consola ***"Odio a los minions"***.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[\Odio a los minions\] --> C([Fin])
+```
+
 ### C++
 
 #### Autor: Jordan
