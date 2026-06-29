@@ -58,6 +58,18 @@ Si el número $t$ es menor que 8, la solución es "dios nos ha abandonado", si $
 ## Implementación
 Leer la variable $t$, hacer una condición ```t < 8```, si es verdadero imprimir "todo bien, un paste de papa y se me quita", si no, imprimir "dios nos ha abandonado".
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/t/]
+B --> C{t < 8}
+C --V--> D[\&quot;dios nos ha abandonado&quot;\]
+C --F--> E[\&quot;todo bien, un paste de papa y se me quita&quot;\]
+D --> G((" "))
+E --> G
+G --> H([Fin])
+
+```
+
 ### C++
 #### Autor: mae
 
