@@ -74,6 +74,20 @@ No dicen que debemos encontrar la diferencia entre la miel que sabemos que tenem
 
 Realmente no necesitamos el arreglo de los registros, basta con acumular en una variable double los registros, luego restar del total de registros el total de miel almacenada que recibimos al inicio.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/c, n/]
+B --> C(Total = 0)
+C --> D{{Desde i = 0
+		Hasta i < n
+		Incremento 1}}
+D --> E[/aux/]
+E --> F(total = total + aux)
+F --> D
+D --> G[\total - c\]
+G --> H([Fin])
+```
+
 ### C++
 #### Autor: Jordan
 
