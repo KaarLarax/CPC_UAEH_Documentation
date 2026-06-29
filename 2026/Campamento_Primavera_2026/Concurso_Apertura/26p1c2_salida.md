@@ -58,6 +58,21 @@ Se nos da una lista de palabras, y se asegura que una de ellas dice "SALIDA", po
 ## Implementación
 Durante la lectura de las palabras podemos comparar si la palabra recién leída dice "SALIDA", si es verdadero, lo imprimimos, si no, no hacemos nada.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/n/]
+B --> C{{Desde i = 1
+        Hasta i <= n
+        Incremento 1}}
+C --> D[/s/]
+D --> E{s == &quot;SALIDA&quot;}
+E --V--> F[/i/]
+E --F--> G((" "))
+F --> G
+G --> C
+C --> H([Fin]) 
+```
+
 ### C++
 #### Autor: mae
 Es necesario pausar la salida de la consola con las líneas:
