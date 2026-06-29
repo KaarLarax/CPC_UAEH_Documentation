@@ -56,7 +56,7 @@ todo bien, un paste de papa y se me quita
 Si el número $t$ es menor que 8, la solución es "dios nos ha abandonado", si $t$ es mayor o igual que 8, entonces la solución es "todo bien, un paste de papa y se me quita".
 
 ## Implementación
-Leer la variable $t$, hacer una condición ````t < 8```, si es verdadero imprimir "todo bien, un paste de papa y se me quita", si no, imprimir "dios nos ha abandonado".
+Leer la variable $t$, hacer una condición ```t < 8```, si es verdadero imprimir "todo bien, un paste de papa y se me quita", si no, imprimir "dios nos ha abandonado".
 
 ### C++
 #### Autor: mae
