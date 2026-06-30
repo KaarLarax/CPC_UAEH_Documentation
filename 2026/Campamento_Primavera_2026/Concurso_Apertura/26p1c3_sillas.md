@@ -125,6 +125,34 @@ Cada que veamos un '0', sumamos 1 a la variable de ceros, si la variable ceros l
 
 Finalmente imprimimos el total de personas, y así con cada fila.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/q/]
+B --> C{{Desde j = 0
+		Hasta j < q
+		Incremento 1}}
+C --> D[/n, fila/]
+D --> E(fila = '0' + fila + '0')
+E --> F(t = 0, ceros = 0)
+F --> G{{Desde i = 0
+		Hasta i < n + 2
+		Incremento 1}}
+G --> H{"fila[i] == '0'"}
+H --V--> I(ceros++)
+H --F--> J((" "))
+I --> J
+J --> K{"fila[i] == '1' ||
+		ceros == 3"}
+K --V--> L(t++)
+L --> M(ceros = 0)
+K --F--> N((" "))
+M --> N
+N --> G
+G --> O[\t\]
+O --> C
+C --> P([Fin])
+```
+
 ### C++
 #### Autor: Jordan
 
@@ -144,18 +172,18 @@ int main() {
 
 	int q;
 	cin >> q;
-	for (int i = 0; i < q; i++) {
+	for (int j = 0; j < q; j++) {
 	    int n;
 	    cin >> n;
-	    string s;
-	    cin >> s;
-        s = '0' + s + '0';
+	    string fila;
+	    cin >> fila;
+        fila = '0' + fila + '0';
 	    int t = 0, ceros = 0;
 	    for (int i = 0; i < n + 2; i++) {
-            if (s[i] == '0') {
+            if (fila[i] == '0') {
                 ceros++;
             }
-            if (s[i] == '1' || ceros == 3) {
+            if (fila[i] == '1' || ceros == 3) {
                 t++;
                 ceros = 0;
             }
