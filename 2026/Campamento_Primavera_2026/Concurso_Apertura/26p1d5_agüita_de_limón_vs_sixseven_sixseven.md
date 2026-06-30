@@ -84,6 +84,24 @@ Solamente si el grupo de personas no es divisible entre 6 y tampoco es divisible
 ## Implementación
 Dicho de otra manera, si $C_i$ módulo 6 es diferente de 0 y $C_i$ módulo 7 es diferente de 0, entonces acumulamos la cantidad de personas de ese grupo en una suma, después haber leído los $N$ grupos, imprimimos la multiplicación $X \cdot suma$.
 
+```mermaid
+graph TD;
+A([Inicio]) --> B[/n, x/]
+B --> C(sum = 0)
+C --> D{{Desde i = 0
+        Hasta i < n
+        Incremento 1}}
+D --> E[/grupo/]
+E --> F{"grupo % 6 == 0 ||
+        grupo % 7 == 0"}
+F --F--> G(sum = sum + grupo)
+F --V--> H((" "))
+G --> H
+H --> D
+D --> I[\sum * x\]
+I --> Z([Fin])
+```
+
 ### C++
 #### Autor: mae
 
@@ -100,13 +118,13 @@ int main()
     cin >> n >> x;
 
     for (int i = 0; i < n; i++){
-        int aux;
-        cin >> aux;
+        int grupo;
+        cin >> grupo;
 
-        if (aux % 6 == 0 || aux % 7 == 0) {
+        if (grupo % 6 == 0 || grupo % 7 == 0) {
 
         } else {
-            sum = sum + aux;
+            sum = sum + grupo;
         }
     }
     cout << sum * x;
