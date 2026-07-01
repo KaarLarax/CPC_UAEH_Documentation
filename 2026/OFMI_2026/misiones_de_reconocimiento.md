@@ -87,10 +87,10 @@ Leemos los cuatro enteros y calculamos el mínimo entre ellos utilizando la func
 ```mermaid
 graph TD;
 A([Inicio]) --> B[/a, b, c, d/]
-B --> C[r = min(a, b)]
-C --> D[r = min(r, c)]
-D --> E[r = min(r, d)]
-E --> F[/r/]
+B --> C["r = min(a, b)"]
+C --> D["r = min(r, c)"]
+D --> E["r = min(r, d)"]
+E --> F[\r\]
 F --> G([Fin])
 ```
 
