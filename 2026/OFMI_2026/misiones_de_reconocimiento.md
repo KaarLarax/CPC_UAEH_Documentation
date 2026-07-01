@@ -1,3 +1,5 @@
+omegaup.com/arena/problem/ofmi-2026-misiones/#problems
+
 # Misiones de reconocimiento
 #### Autor: Ethan Jiménez
 
