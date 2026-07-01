@@ -82,11 +82,17 @@ Sin embargo, con una carga inicial de $6$ toneladas, después de destruir esos m
 - Greedy
 
 ## Propuesta de solución
-#### Autor: 
+#### Autor: Jordan
 
+Necesitamos encontrar la carga mínima posible pero que sea capaz de destruir todos los asteroides, para eso necesitamos elegir un número, y recorrer la lista de asteroides identificando si la suma de la carga inicial más el elemento actual es mayor o igual que el siguiente elemento, si es mayor o igual significa que si lo podemos destruir el siguiente asteroide y continuamos con la simulación, si en algun punto es falso, significa que el número elegido fue muy pequeño, y si se pude completar toda la simulación sin fallas, puede significar que el número escogido fue demasiado grande.
+
+Para escoger un número podemos usar una búsqueda binaria sobre resultado, donde buscamos la frontera entre que sí se pudo destruir todo y que no fue suficiente carga para destruir todo.
 
 ## Implementación
 
+Primero leemos y almacenamos los asteroides en un arreglo, ordenamos el arreglo de menor a mayor, y ajustamos los límites de la búsqueda binaria a ser L igual al primer elemento, R igual al último elemento, pues sabemos que siempre el mínimo necesario será el primer elemento, sino, nunca podríamos destruir ningún asteroide, y el máximo posible será menor que el último elemento.
+
+Podemos ocupar una variable booleana para marcar si se logró acabar toda la simulación o falló en algún momento, en base a eso recortamos los límites.
 
 ### C++
 
