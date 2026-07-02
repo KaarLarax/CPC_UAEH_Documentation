@@ -132,8 +132,10 @@ int main()
 
     vector<pair<int,int>> estrellas;
     int a[n + 5];
+    int sum = 0;
     for (int i = 1; i <= n; i++) {
         cin >> a[i];
+        sum += a[i];
         if (a[i] != 0)
             estrellas.emplace_back(a[i], i);
     }
@@ -144,7 +146,7 @@ int main()
     vector<set<int>> grafo (n + 1);
 
     for (auto[con, est] : estrellas) {
-        if (con <= 0) {
+        if (con <= 0 || c >= sum / 2) {
             break;
         }
         while (grafo[est].size() < con) {
@@ -166,7 +168,6 @@ int main()
     for (auto [f, s] : conexiones) {
         cout << f << " " << s << '\n';
     }
-
 }
 ```
 
