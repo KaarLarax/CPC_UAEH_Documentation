@@ -114,10 +114,60 @@ Una posible reconstrucción es:
 ```
 
 ### C++
-#### Autor:
+#### Autor: Jordan
 
+
+Tiempo límite excedido pero cumple la tarea
 ```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int main()
+{
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    int n;
+    cin >> n;
+
+    vector<pair<int,int>> estrellas;
+    int a[n + 5];
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+        if (a[i] != 0)
+            estrellas.emplace_back(a[i], i);
+    }
+    sort(estrellas.begin(), estrellas.end());
+    reverse(estrellas.begin(), estrellas.end());
+    int c = 0;
+    list<pair<int, int>> conexiones;
+    vector<set<int>> grafo (n + 1);
+
+    for (auto[con, est] : estrellas) {
+        if (con <= 0) {
+            break;
+        }
+        while (grafo[est].size() < con) {
+            for (int i = 1; i <= n; i++) {
+                if (i != est && i > 0) {
+                    if (!grafo[i].count(est) && grafo[i].size() < a[i]) {
+                        grafo[i].emplace(est);
+                        grafo[est].emplace(i);
+                        c++;
+                        conexiones.emplace_back(est, i);
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    cout << c << '\n';
+    for (auto [f, s] : conexiones) {
+        cout << f << " " << s << '\n';
+    }
+
+}
 ```
 
 ### Java
