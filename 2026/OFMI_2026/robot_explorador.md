@@ -1,4 +1,4 @@
-https://omegaup.com/arena/problem/ofmi-2026-asteroides/#problems
+https://omegaup.com/arena/problem/ofmi-2026-robot/
 
 # Robot explorador
 #### Autor: Ethan Jiménez
