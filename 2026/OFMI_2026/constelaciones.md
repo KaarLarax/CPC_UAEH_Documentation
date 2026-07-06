@@ -117,7 +117,7 @@ Una posible reconstrucción es:
 #### Autor: Jordan
 
 
-Tiempo límite excedido pero cumple la tarea
+Respuesta correcta solo para el 14% de los casos, entra en tiempo, veredicto WA
 ```cpp
 #include <bits/stdc++.h>
 
@@ -129,37 +129,29 @@ int main()
 
     int n;
     cin >> n;
-
-    vector<pair<int,int>> estrellas;
-    int a[n + 5];
-    int sum = 0;
-    for (int i = 1; i <= n; i++) {
-        cin >> a[i];
-        sum += a[i];
-        if (a[i] != 0)
-            estrellas.emplace_back(a[i], i);
-    }
-    sort(estrellas.begin(), estrellas.end());
-    reverse(estrellas.begin(), estrellas.end());
+    vector<pair<int,int>> a;
+    list<pair<int,int>> conexiones;
     int c = 0;
-    list<pair<int, int>> conexiones;
-    vector<set<int>> grafo (n + 1);
 
-    for (auto[con, est] : estrellas) {
-        if (con <= 0 || c >= sum / 2) {
-            break;
-        }
-        while (grafo[est].size() < con) {
-            for (int i = 1; i <= n; i++) {
-                if (i != est && i > 0) {
-                    if (!grafo[i].count(est) && grafo[i].size() < a[i]) {
-                        grafo[i].emplace(est);
-                        grafo[est].emplace(i);
-                        c++;
-                        conexiones.emplace_back(est, i);
-                        break;
-                    }
+    for (int i = 0; i < n; i++) {
+        int aux;
+        cin >> aux;
+        a.emplace_back(aux, i);
+    }
+    sort(a.begin(), a.end());
+    reverse(a.begin(), a.end());
+
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (a[i].first > 0) {
+                if (a[j].first > 0) {
+                    c++;
+                    conexiones.push_back({a[i].second + 1, a[j].second + 1});
+                    a[i].first--;
+                    a[j].first--;
                 }
+            } else {
+                break;
             }
         }
     }
