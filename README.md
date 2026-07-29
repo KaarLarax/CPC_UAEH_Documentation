@@ -50,7 +50,7 @@ Cada archivo Markdown puede incluir:
 - Implementación.
     - Diagrama de flujo
     - Codigo.
-        - C++.
+        - C++20.
         - Java.
         - Kotlin.
         - Python.
