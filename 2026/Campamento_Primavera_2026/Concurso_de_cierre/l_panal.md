@@ -90,14 +90,14 @@ Para cualquier altura $N$, la respuesta será la suma de ambas posibilidades en 
 ## Implementación
 
 ```mermaid
-Dirección Izquierda Derecha
-D: Dividido (Estado 0)
-U: Unido (Estado 1)
+flowchart LR
+    D["Dividido (Estado 0)"]
+    U["Unido (Estado 1)"]
 
-D --> D : 4 combinaciones
-U --> D : 1 combinación
-D --> U : 1 combinación
-U --> U : 2 combinaciones
+    D -->|4 combinaciones| D
+    U -->|1 combinación| D
+    D -->|1 combinación| U
+    U -->|2 combinaciones| U
 ```
 
 ### C++
