@@ -103,6 +103,8 @@ El Club de Programación Competitiva (CPC) de la Universidad Autónoma del Estad
 
 Este repositorio forma parte del esfuerzo del club por documentar y compartir conocimiento entre sus integrantes.
 
+Además contamos con un canal de YouTube (https://www.youtube.com/@yearzero4486) donde explicamos teoría y resolvemos problemas, como complemento a este repositorio
+
 ## Licencia
 
 Salvo que se indique lo contrario, el contenido de este repositorio tiene fines educativos y académicos, sin ánimos de lucro.
