@@ -1,6 +1,6 @@
 https://omegaup.com/arena/problem/Concatenacion-de-dos-numeros/#problems
 
-# Título 7388. Concatenacion de dos números
+# 7388. Concatenacion de dos números
 #### Autor: Juan Carlos Lopez Pimentel (jclopezpimentel)
 
 ## Descripción
