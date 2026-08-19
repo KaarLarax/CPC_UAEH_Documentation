@@ -1,7 +1,7 @@
 https://omegaup.com/arena/problem/Concatenacion-de-dos-numeros/#problems
 
 # Título 7388. Concatenacion de dos números
-#### Autor: 
+#### Autor: Juan Carlos Lopez Pimentel (jclopezpimentel)
 
 ## Descripción
 Realiza un programa que lea dos números e imprima su concatenación.
