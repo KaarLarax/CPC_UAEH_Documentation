@@ -1,7 +1,7 @@
 https://omegaup.com/arena/problem/Acumulando-Monedas/#problems
 
 # Título 4588. Acumulando Monedas
-#### Autor: 
+#### Autor: Coding Rush
 
 ## Descripción
 A los voluntarios el Coding Rush les gusta mucho jugar MonsterBall Go, y están planeando hacer una excursión al terminar esta sesión. Mario quiere revisar cuántos gimnasios hay en el camino, pues cada gimnasio le da  $10$  MonsterMonedas.
