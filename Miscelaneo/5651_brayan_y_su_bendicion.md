@@ -69,10 +69,7 @@ Un numero entero $a$ que indica los años que cumple el hijo de Brayan el 2017
 Para obtener la edad que cumple el hijo de Brayan durante el año 2017, se debe restar el año de nacimiento $n$ al año actual establecido en el problema, que es 2017.
 
 ## Implementación
-Para calcular la edad se tiene hacer esta operación: $2017$ - $n$ 
-
-El resultado es esa misma operación
-
+Leer $N$ e imprimir esta operación:  $2017$ - $n$ 
 
 ### C++
 
