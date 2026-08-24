@@ -1,6 +1,6 @@
 https://omegaup.com/arena/problem/suma-simple/
 
-# Título 2568. suma simple 
+# 2568. suma simple 
 #### Autor: diegogonzalezhernandez1 (DevBriaares)
 
 ## Descripción
