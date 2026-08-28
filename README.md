@@ -96,6 +96,7 @@ Al agregar documentación nueva se recomienda:
 - [@gomae19](https://github.com/gomae19)
 - [@jordansosa1](https://github.com/jordansosa1)
 - [@edcrvl](https://github.com/edcrvl)
+- [@Kaarlarax](https://github.com/kaarlarax)
 
 ## Sobre el Club
 
